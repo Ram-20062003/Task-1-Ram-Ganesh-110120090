@@ -4,146 +4,165 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFAEDDD0"
-    android:id="@+id/quiz"
+    android:background="@drawable/star"
+    android:id="@+id/rel"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="306dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
-        android:layout_marginBottom="3dp"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="163dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="103dp"
-        android:layout_marginLeft="103dp"
-        android:layout_marginBottom="378dp"
-        android:background="#609DCAED"
-        android:text="DD-MM-YYYY"
-        android:textAllCaps="false"
-        android:textColor="#2803FF"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="199dp"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginEnd="-381dp"
-        android:layout_marginRight="-381dp"
-        android:layout_marginBottom="-245dp"
-        android:layout_toStartOf="@+id/textView"
-        android:layout_toLeftOf="@id/textView"
-        android:background="#B6B3B3">
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Day 1"
-            android:textSize="16sp"
-            app:buttonTint="#164CEF" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Day 2"
-            android:textSize="16sp"
-            app:buttonTint="#F44336" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Day 3"
-            android:textSize="16sp"
-            app:buttonTint="#4CAF50" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Day 4"
-            android:textSize="16sp"
-            app:buttonTint="#FFEB3B" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/instruct"
-        android:layout_width="377dp"
-        android:layout_height="157dp"
-        android:layout_above="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_marginEnd="-82dp"
-        android:layout_marginRight="-82dp"
-        android:layout_marginBottom="111dp"
-        android:background="#EA8B8B"
-        android:fontFamily="cursive"
-        android:text=" "
-        android:textColor="#040404"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/total"
         android:layout_width="166dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="-2dp"
         android:gravity="center_horizontal"
-        android:visibility="invisible"
-        android:background="#0B0A0A"
         android:textColor="#FAFAFA"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="283dp"
-        android:layout_height="32dp"
-        android:layout_above="@+id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="103dp"
-        android:layout_marginRight="103dp"
-        android:layout_marginBottom="37dp"
-        android:text="Choose the correct option"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold|italic" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/styling_outer">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="300dp"
+            android:layout_height="229dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="92dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/styling_option"
+                android:gravity="center"
+                android:textColor="#FAF8F8"
+                android:textSize="16sp"
+                app:buttonTint="#164CEF" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/styling_option"
+                android:gravity="center"
+                android:textColor="#FAFAFA"
+                android:textSize="16sp"
+                app:buttonTint="#F44336" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/styling_option"
+                android:gravity="center"
+                android:textColor="#FDFCFC"
+                android:textSize="16sp"
+                app:buttonTint="#4CAF50" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/styling_option"
+                android:gravity="center"
+                android:textColor="#FFFCFC"
+                android:textSize="16sp"
+                app:buttonTint="#FFEB3B" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="128dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/styling_question"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#FAF8F8"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-61dp"
+                android:gravity="center"
+                android:text="DD-MM-YYYY"
+                android:textAllCaps="false"
+                android:textColor=" #e6ffe6"
+                android:fontFamily="@font/petrona"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/finalscore"
-        android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_width="288dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="28dp"
         android:autoText="false"
         android:background="#F8F5F5"
         android:gravity="center_vertical"
@@ -153,6 +172,41 @@
         android:textSize="34sp"
         android:textStyle="bold"
         android:visibility="invisible" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="169dp"
+        android:layout_marginBottom="630dp"
+        android:background="@drawable/styling_questionno"
+        android:fontFamily="@font/petrona"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-1dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:text="00:00" />
 
 </RelativeLayout>
 
