@@ -10,11 +10,14 @@
         android:roundIcon="@drawable/quizicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Task1">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".result_main" android:screenOrientation="portrait"></activity>
+        <activity android:name=".first_page" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
     </application>
